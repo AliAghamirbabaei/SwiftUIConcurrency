@@ -11,6 +11,12 @@
 		30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7F27CA9A6D006AE172 /* ContentView.swift */; };
 		30878A8227CA9A6F006AE172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30878A8127CA9A6F006AE172 /* Assets.xcassets */; };
 		30878A8527CA9A6F006AE172 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30878A8427CA9A6F006AE172 /* Preview Assets.xcassets */; };
+		30878A8D27CAA0DA006AE172 /* DateTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A8C27CAA0DA006AE172 /* DateTitle.swift */; };
+		30878A8F27CAA5E3006AE172 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A8E27CAA5E2006AE172 /* HomeView.swift */; };
+		30878A9327CAA6F6006AE172 /* FeaturedCourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A9227CAA6F6006AE172 /* FeaturedCourseCard.swift */; };
+		30878A9527CAAAAC006AE172 /* FeaturedCourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A9427CAAAAC006AE172 /* FeaturedCourseList.swift */; };
+		30878A9727CAAF3B006AE172 /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A9627CAAF3A006AE172 /* CourseCard.swift */; };
+		30878A9927CAB061006AE172 /* CouseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A9827CAB061006AE172 /* CouseList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		30878A7F27CA9A6D006AE172 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30878A8127CA9A6F006AE172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30878A8427CA9A6F006AE172 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30878A8B27CA9C91006AE172 /* SwiftUIConcurrency.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIConcurrency.entitlements; sourceTree = "<group>"; };
+		30878A8C27CAA0DA006AE172 /* DateTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTitle.swift; sourceTree = "<group>"; };
+		30878A8E27CAA5E2006AE172 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		30878A9227CAA6F6006AE172 /* FeaturedCourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCourseCard.swift; sourceTree = "<group>"; };
+		30878A9427CAAAAC006AE172 /* FeaturedCourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCourseList.swift; sourceTree = "<group>"; };
+		30878A9627CAAF3A006AE172 /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
+		30878A9827CAB061006AE172 /* CouseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouseList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,10 @@
 		30878A7C27CA9A6D006AE172 /* SwiftUIConcurrency */ = {
 			isa = PBXGroup;
 			children = (
+				30878A8B27CA9C91006AE172 /* SwiftUIConcurrency.entitlements */,
 				30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */,
-				30878A7F27CA9A6D006AE172 /* ContentView.swift */,
+				30878A9127CAA612006AE172 /* Views */,
+				30878A9027CAA5F7006AE172 /* Components */,
 				30878A8127CA9A6F006AE172 /* Assets.xcassets */,
 				30878A8327CA9A6F006AE172 /* Preview Content */,
 			);
@@ -65,6 +80,27 @@
 				30878A8427CA9A6F006AE172 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30878A9027CAA5F7006AE172 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				30878A9627CAAF3A006AE172 /* CourseCard.swift */,
+				30878A9827CAB061006AE172 /* CouseList.swift */,
+				30878A9227CAA6F6006AE172 /* FeaturedCourseCard.swift */,
+				30878A9427CAAAAC006AE172 /* FeaturedCourseList.swift */,
+				30878A8C27CAA0DA006AE172 /* DateTitle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		30878A9127CAA612006AE172 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30878A7F27CA9A6D006AE172 /* ContentView.swift */,
+				30878A8E27CAA5E2006AE172 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */,
+				30878A8F27CAA5E3006AE172 /* HomeView.swift in Sources */,
+				30878A9527CAAAAC006AE172 /* FeaturedCourseList.swift in Sources */,
 				30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */,
+				30878A9727CAAF3B006AE172 /* CourseCard.swift in Sources */,
+				30878A9927CAB061006AE172 /* CouseList.swift in Sources */,
+				30878A8D27CAA0DA006AE172 /* DateTitle.swift in Sources */,
+				30878A9327CAA6F6006AE172 /* FeaturedCourseCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +308,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIConcurrency/SwiftUIConcurrency.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIConcurrency/Preview Content\"";
+				DEVELOPMENT_TEAM = N4Y99Y6PT4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -283,6 +327,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AliAghamirbabaei.SwiftUIConcurrency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,9 +339,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIConcurrency/SwiftUIConcurrency.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIConcurrency/Preview Content\"";
+				DEVELOPMENT_TEAM = N4Y99Y6PT4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -311,6 +358,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AliAghamirbabaei.SwiftUIConcurrency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
