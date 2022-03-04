@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303E33E827CEF164006C113F /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 303E33E727CEF164006C113F /* Apollo */; };
 		30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */; };
 		30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7F27CA9A6D006AE172 /* ContentView.swift */; };
 		30878A8227CA9A6F006AE172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30878A8127CA9A6F006AE172 /* Assets.xcassets */; };
@@ -17,6 +18,9 @@
 		30878A9527CAAAAC006AE172 /* FeaturedCourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A9427CAAAAC006AE172 /* FeaturedCourseList.swift */; };
 		30878A9727CAAF3B006AE172 /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A9627CAAF3A006AE172 /* CourseCard.swift */; };
 		30878A9927CAB061006AE172 /* CouseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A9827CAB061006AE172 /* CouseList.swift */; };
+		30C0FB5B27D18D1A0098538E /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 30C0FB5A27D18D1A0098538E /* schema.json */; };
+		30C0FB5D27D18F8A0098538E /* CourseQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 30C0FB5C27D18F8A0098538E /* CourseQuery.graphql */; };
+		30C0FB6227D191140098538E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0FB6127D191140098538E /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,9 @@
 		30878A9427CAAAAC006AE172 /* FeaturedCourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCourseList.swift; sourceTree = "<group>"; };
 		30878A9627CAAF3A006AE172 /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
 		30878A9827CAB061006AE172 /* CouseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouseList.swift; sourceTree = "<group>"; };
+		30C0FB5A27D18D1A0098538E /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
+		30C0FB5C27D18F8A0098538E /* CourseQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CourseQuery.graphql; sourceTree = "<group>"; };
+		30C0FB6127D191140098538E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303E33E827CEF164006C113F /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +72,15 @@
 		30878A7C27CA9A6D006AE172 /* SwiftUIConcurrency */ = {
 			isa = PBXGroup;
 			children = (
+				30C0FB6127D191140098538E /* API.swift */,
+				30C0FB5A27D18D1A0098538E /* schema.json */,
 				30878A8B27CA9C91006AE172 /* SwiftUIConcurrency.entitlements */,
 				30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */,
 				30878A9127CAA612006AE172 /* Views */,
 				30878A9027CAA5F7006AE172 /* Components */,
 				30878A8127CA9A6F006AE172 /* Assets.xcassets */,
 				30878A8327CA9A6F006AE172 /* Preview Content */,
+				30C0FB5C27D18F8A0098538E /* CourseQuery.graphql */,
 			);
 			path = SwiftUIConcurrency;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30878A8827CA9A6F006AE172 /* Build configuration list for PBXNativeTarget "SwiftUIConcurrency" */;
 			buildPhases = (
+				3006E0E127CF055400AF8021 /* Apollo */,
 				30878A7627CA9A6D006AE172 /* Sources */,
 				30878A7727CA9A6D006AE172 /* Frameworks */,
 				30878A7827CA9A6D006AE172 /* Resources */,
@@ -119,6 +131,9 @@
 			dependencies = (
 			);
 			name = SwiftUIConcurrency;
+			packageProductDependencies = (
+				303E33E727CEF164006C113F /* Apollo */,
+			);
 			productName = SwiftUIConcurrency;
 			productReference = 30878A7A27CA9A6D006AE172 /* SwiftUIConcurrency.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 30878A7127CA9A6D006AE172;
+			packageReferences = (
+				303E33E627CEF164006C113F /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 30878A7B27CA9A6D006AE172 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,11 +180,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				30878A8527CA9A6F006AE172 /* Preview Assets.xcassets in Resources */,
+				30C0FB5B27D18D1A0098538E /* schema.json in Resources */,
 				30878A8227CA9A6F006AE172 /* Assets.xcassets in Resources */,
+				30C0FB5D27D18F8A0098538E /* CourseQuery.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3006E0E127CF055400AF8021 /* Apollo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Apollo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh apollo schema:download --header \"Authorization: Bearer 49ga-cH0U8EPTRselEIBL-qwQ4YOcLIZ4eyxtRrRdpg\" \\ --endpoint https://graphql.contentful.com/content/v1/spaces/fnkspikgw1vj/\n\n# \"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30878A7627CA9A6D006AE172 /* Sources */ = {
@@ -180,6 +221,7 @@
 				30878A9727CAAF3B006AE172 /* CourseCard.swift in Sources */,
 				30878A9927CAB061006AE172 /* CouseList.swift in Sources */,
 				30878A8D27CAA0DA006AE172 /* DateTitle.swift in Sources */,
+				30C0FB6227D191140098538E /* API.swift in Sources */,
 				30878A9327CAA6F6006AE172 /* FeaturedCourseCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +429,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		303E33E627CEF164006C113F /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		303E33E727CEF164006C113F /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 303E33E627CEF164006C113F /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30878A7227CA9A6D006AE172 /* Project object */;
 }
