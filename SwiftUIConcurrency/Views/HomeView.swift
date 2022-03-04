@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var courseViewModel: CourseViewModel
+    
     var body: some View {
         ZStack {
             ScrollView {
@@ -26,7 +28,7 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.top, 40)
                 
-                CouseList()
+                CouseList(courses: courseViewModel.courses)
                     .padding(.top, 20)
             }
             
@@ -41,5 +43,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(CourseViewModel())
     }
 }

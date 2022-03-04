@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct CouseList: View {
+    var courses: [Course]
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 15)]
     var body: some View {
         LazyVGrid(columns: columns, spacing: 15) {
-            ForEach(0..<10, id: \.self) { number in
-                CourseCard()
+            if courses.count > 0 {
+                ForEach(courses, id: \.id) { course in
+                    CourseCard(course: course)
+                }
+            }else {
+                ForEach(0..<4, id: \.self) { number in
+                    CourseCard(course: coursePreviewData)
+                        .redacted(reason: .placeholder )
+                    
+                }
             }
         }
         .padding(.horizontal, 20)
@@ -21,6 +30,6 @@ struct CouseList: View {
 
 struct CouseList_Previews: PreviewProvider {
     static var previews: some View {
-        CouseList()
+        CouseList(courses: [coursePreviewData])
     }
 }

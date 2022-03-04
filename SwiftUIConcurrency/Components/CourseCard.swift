@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct CourseCard: View {
-        var body: some View {
+    var course: Course
+    
+    var body: some View {
         VStack(spacing: 8) {
-            AsyncImage(url: URL(string: "https://AliAghamirbabaei.com/SwiftUI-Concurrency/Assets/SwiftUI-Combine-Cover.png")) { image in
+            AsyncImage(url: URL(string: course.illustration)) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -23,14 +25,14 @@ struct CourseCard: View {
             
             Spacer()
             
-            Text("SwiftUI for iOS 15")
+            Text(course.title)
                 .font(.headline)
                 .foregroundColor(.white)
                 .lineLimit(2)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .multilineTextAlignment(.leading)
             
-            Text("20 sections - 4 hours")
+            Text("\(course.numberOfSection) sections - \(course.numberOfHours) hours")
                 .font(.caption)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7)))
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -40,7 +42,7 @@ struct CourseCard: View {
         .padding(16)
         .frame(height: 217, alignment: .top)
         .background(
-            LinearGradient(gradient: Gradient(colors: [.purple, .blue]), startPoint: .top, endPoint: .bottomLeading)
+            LinearGradient(gradient: Gradient(colors: [.init(hex: course.colors.first!!), .init(hex: course.colors.last!!)]), startPoint: .top, endPoint: .bottomLeading)
         )
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -53,6 +55,6 @@ struct CourseCard: View {
 
 struct CourseCard_Previews: PreviewProvider {
     static var previews: some View {
-        CourseCard()
+        CourseCard(course: coursePreviewData)
     }
 }
