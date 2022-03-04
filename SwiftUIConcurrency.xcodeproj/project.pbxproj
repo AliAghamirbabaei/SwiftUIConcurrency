@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		30303DD827D222E7002AFD89 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DD727D222E7002AFD89 /* CourseModel.swift */; };
+		30303DDA27D22B60002AFD89 /* CourseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 30303DD927D22B60002AFD89 /* CourseData.json */; };
+		30303DDC27D22B6F002AFD89 /* LoadFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DDB27D22B6F002AFD89 /* LoadFromFile.swift */; };
+		30303DDE27D22B95002AFD89 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DDD27D22B95002AFD89 /* PreviewData.swift */; };
+		30303DE027D22DF1002AFD89 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DDF27D22DF1002AFD89 /* Color+Ext.swift */; };
 		303E33E827CEF164006C113F /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 303E33E727CEF164006C113F /* Apollo */; };
 		30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */; };
 		30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7F27CA9A6D006AE172 /* ContentView.swift */; };
@@ -28,6 +32,10 @@
 
 /* Begin PBXFileReference section */
 		30303DD727D222E7002AFD89 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		30303DD927D22B60002AFD89 /* CourseData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CourseData.json; sourceTree = "<group>"; };
+		30303DDB27D22B6F002AFD89 /* LoadFromFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadFromFile.swift; sourceTree = "<group>"; };
+		30303DDD27D22B95002AFD89 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		30303DDF27D22DF1002AFD89 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		30878A7A27CA9A6D006AE172 /* SwiftUIConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConcurrencyApp.swift; sourceTree = "<group>"; };
 		30878A7F27CA9A6D006AE172 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,7 +113,9 @@
 		30878A8327CA9A6F006AE172 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				30303DD927D22B60002AFD89 /* CourseData.json */,
 				30878A8427CA9A6F006AE172 /* Preview Assets.xcassets */,
+				30303DDD27D22B95002AFD89 /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -134,7 +144,9 @@
 		30C0FB6327D1920F0098538E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				30303DDB27D22B6F002AFD89 /* LoadFromFile.swift */,
 				30C0FB6427D192330098538E /* Network.swift */,
+				30303DDF27D22DF1002AFD89 /* Color+Ext.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -215,6 +227,7 @@
 				30878A8527CA9A6F006AE172 /* Preview Assets.xcassets in Resources */,
 				30C0FB5B27D18D1A0098538E /* schema.json in Resources */,
 				30878A8227CA9A6F006AE172 /* Assets.xcassets in Resources */,
+				30303DDA27D22B60002AFD89 /* CourseData.json in Resources */,
 				30C0FB5D27D18F8A0098538E /* CourseQuery.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,14 +264,17 @@
 				30C0FB6527D192330098538E /* Network.swift in Sources */,
 				30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */,
 				30878A8F27CAA5E3006AE172 /* HomeView.swift in Sources */,
+				30303DDE27D22B95002AFD89 /* PreviewData.swift in Sources */,
 				30878A9527CAAAAC006AE172 /* FeaturedCourseList.swift in Sources */,
 				30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */,
 				30303DD827D222E7002AFD89 /* CourseModel.swift in Sources */,
 				30878A9727CAAF3B006AE172 /* CourseCard.swift in Sources */,
 				30878A9927CAB061006AE172 /* CouseList.swift in Sources */,
 				30878A8D27CAA0DA006AE172 /* DateTitle.swift in Sources */,
+				30303DDC27D22B6F002AFD89 /* LoadFromFile.swift in Sources */,
 				30C0FB6227D191140098538E /* API.swift in Sources */,
 				30878A9327CAA6F6006AE172 /* FeaturedCourseCard.swift in Sources */,
+				30303DE027D22DF1002AFD89 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
