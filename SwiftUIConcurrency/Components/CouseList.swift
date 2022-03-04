@@ -23,7 +23,6 @@ struct CouseList: View {
 //                ForEach(0..<4, id: \.self) { number in
 //                    CourseCard(course: coursePreviewData)
 //                        .redacted(reason: .placeholder )
-//                    
 //                }
 //            }
         }
