@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30303DD827D222E7002AFD89 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DD727D222E7002AFD89 /* CourseModel.swift */; };
 		303E33E827CEF164006C113F /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 303E33E727CEF164006C113F /* Apollo */; };
 		30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */; };
 		30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7F27CA9A6D006AE172 /* ContentView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30303DD727D222E7002AFD89 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		30878A7A27CA9A6D006AE172 /* SwiftUIConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConcurrencyApp.swift; sourceTree = "<group>"; };
 		30878A7F27CA9A6D006AE172 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30303DD627D222C7002AFD89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30303DD727D222E7002AFD89 /* CourseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		30878A7127CA9A6D006AE172 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 				30C0FB5A27D18D1A0098538E /* schema.json */,
 				30878A8B27CA9C91006AE172 /* SwiftUIConcurrency.entitlements */,
 				30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */,
+				30303DD627D222C7002AFD89 /* Model */,
 				30878A9127CAA612006AE172 /* Views */,
 				30878A9027CAA5F7006AE172 /* Components */,
 				30C0FB6327D1920F0098538E /* Utils */,
@@ -242,6 +253,7 @@
 				30878A8F27CAA5E3006AE172 /* HomeView.swift in Sources */,
 				30878A9527CAAAAC006AE172 /* FeaturedCourseList.swift in Sources */,
 				30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */,
+				30303DD827D222E7002AFD89 /* CourseModel.swift in Sources */,
 				30878A9727CAAF3B006AE172 /* CourseCard.swift in Sources */,
 				30878A9927CAB061006AE172 /* CouseList.swift in Sources */,
 				30878A8D27CAA0DA006AE172 /* DateTitle.swift in Sources */,

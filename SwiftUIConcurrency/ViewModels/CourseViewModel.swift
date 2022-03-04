@@ -9,6 +9,8 @@ import Foundation
 import Apollo
 
 class CourseViewModel: ObservableObject {
+    @Published public private(set) var courses: [Course] = []
+    
     private func queryCourses() async throws -> GraphQLResult<CourseQuery.Data>? {
         return await withCheckedContinuation { countinuation in
             Network.shared.apollo.fetch(query: CourseQuery(locale: "")) { result in
@@ -28,10 +30,18 @@ class CourseViewModel: ObservableObject {
         do {
             let result = try await queryCourses()
             if let result = result {
-                print("Result: \(result)")
+                if let courseCollection = result.data?.courseCollection {
+                    self.courses = process(data: courseCollection)
+                }
             }
         } catch {
             print("Error \(error)")
         }
+    }
+    
+    private func process(data: CoursesData) -> [Course] {
+        let content = CoursesCollection.init(data)
+        
+        return content.courses
     }
 }
