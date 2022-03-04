@@ -18,7 +18,7 @@ struct SectionDataColletion: Decodable {
         }) ?? []
     }
     
-    struct SectionModel: Decodable {
+    struct SectionModel: Identifiable, Decodable {
         let id: String
         let title: String
         var isPinned: Bool
