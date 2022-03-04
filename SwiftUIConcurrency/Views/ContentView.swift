@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var courseViewModel: CourseViewModel
     var body: some View {
         TabView {
             HomeView()
@@ -15,6 +16,9 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Learn now")
                 }
+        }
+        .task {
+            await courseViewModel.fetch()
         }
     }
 }

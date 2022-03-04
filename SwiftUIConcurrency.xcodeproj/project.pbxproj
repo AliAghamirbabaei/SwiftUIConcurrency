@@ -21,6 +21,8 @@
 		30C0FB5B27D18D1A0098538E /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 30C0FB5A27D18D1A0098538E /* schema.json */; };
 		30C0FB5D27D18F8A0098538E /* CourseQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 30C0FB5C27D18F8A0098538E /* CourseQuery.graphql */; };
 		30C0FB6227D191140098538E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0FB6127D191140098538E /* API.swift */; };
+		30C0FB6527D192330098538E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0FB6427D192330098538E /* Network.swift */; };
+		30C0FB6827D193110098538E /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0FB6727D193110098538E /* CourseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		30C0FB5A27D18D1A0098538E /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
 		30C0FB5C27D18F8A0098538E /* CourseQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CourseQuery.graphql; sourceTree = "<group>"; };
 		30C0FB6127D191140098538E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		30C0FB6427D192330098538E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		30C0FB6727D193110098538E /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */,
 				30878A9127CAA612006AE172 /* Views */,
 				30878A9027CAA5F7006AE172 /* Components */,
+				30C0FB6327D1920F0098538E /* Utils */,
+				30C0FB6627D192FD0098538E /* ViewModels */,
 				30878A8127CA9A6F006AE172 /* Assets.xcassets */,
 				30878A8327CA9A6F006AE172 /* Preview Content */,
 				30C0FB5C27D18F8A0098538E /* CourseQuery.graphql */,
@@ -112,6 +118,22 @@
 				30878A8E27CAA5E2006AE172 /* HomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		30C0FB6327D1920F0098538E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				30C0FB6427D192330098538E /* Network.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		30C0FB6627D192FD0098538E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30C0FB6727D193110098538E /* CourseViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C0FB6827D193110098538E /* CourseViewModel.swift in Sources */,
+				30C0FB6527D192330098538E /* Network.swift in Sources */,
 				30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */,
 				30878A8F27CAA5E3006AE172 /* HomeView.swift in Sources */,
 				30878A9527CAAAAC006AE172 /* FeaturedCourseList.swift in Sources */,
