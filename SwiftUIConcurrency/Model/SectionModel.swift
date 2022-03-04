@@ -19,9 +19,11 @@ struct SectionDataColletion: Decodable {
     }
     
     struct SectionModel: Decodable {
+        let id: String
         let title: String
         
         init(_ section: SectionQuery.Data.SectionCollection.Section?) {
+            self.id = section?.sys.id ?? ""
             self.title = section?.title ?? ""
         }
     }

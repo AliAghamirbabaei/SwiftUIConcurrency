@@ -43,4 +43,8 @@ class SectionViewModel: ObservableObject {
         
         return content.sections
     }
+    
+    func randomizeSections() async {
+        sections.shuffle()
+    }
 }
