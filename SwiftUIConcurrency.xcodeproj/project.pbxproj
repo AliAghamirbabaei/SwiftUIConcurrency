@@ -15,6 +15,8 @@
 		30303DE327D257CB002AFD89 /* SectionQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 30303DE227D257CB002AFD89 /* SectionQuery.graphql */; };
 		30303DE527D258DB002AFD89 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DE427D258DB002AFD89 /* SectionModel.swift */; };
 		30303DE727D25A68002AFD89 /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DE627D25A68002AFD89 /* SectionViewModel.swift */; };
+		30303DE927D27600002AFD89 /* SectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DE827D27600002AFD89 /* SectionsView.swift */; };
+		30303DEB27D276F6002AFD89 /* SectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DEA27D276F6002AFD89 /* SectionList.swift */; };
 		303E33E827CEF164006C113F /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 303E33E727CEF164006C113F /* Apollo */; };
 		30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */; };
 		30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7F27CA9A6D006AE172 /* ContentView.swift */; };
@@ -42,6 +44,8 @@
 		30303DE227D257CB002AFD89 /* SectionQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = SectionQuery.graphql; sourceTree = "<group>"; };
 		30303DE427D258DB002AFD89 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		30303DE627D25A68002AFD89 /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
+		30303DE827D27600002AFD89 /* SectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsView.swift; sourceTree = "<group>"; };
+		30303DEA27D276F6002AFD89 /* SectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionList.swift; sourceTree = "<group>"; };
 		30878A7A27CA9A6D006AE172 /* SwiftUIConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConcurrencyApp.swift; sourceTree = "<group>"; };
 		30878A7F27CA9A6D006AE172 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 				30878A9227CAA6F6006AE172 /* FeaturedCourseCard.swift */,
 				30878A9427CAAAAC006AE172 /* FeaturedCourseList.swift */,
 				30878A8C27CAA0DA006AE172 /* DateTitle.swift */,
+				30303DEA27D276F6002AFD89 /* SectionList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			children = (
 				30878A7F27CA9A6D006AE172 /* ContentView.swift */,
 				30878A8E27CAA5E2006AE172 /* HomeView.swift */,
+				30303DE827D27600002AFD89 /* SectionsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 				30303DE527D258DB002AFD89 /* SectionModel.swift in Sources */,
 				30878A8F27CAA5E3006AE172 /* HomeView.swift in Sources */,
 				30303DDE27D22B95002AFD89 /* PreviewData.swift in Sources */,
+				30303DE927D27600002AFD89 /* SectionsView.swift in Sources */,
+				30303DEB27D276F6002AFD89 /* SectionList.swift in Sources */,
 				30878A9527CAAAAC006AE172 /* FeaturedCourseList.swift in Sources */,
 				30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */,
 				30303DE727D25A68002AFD89 /* SectionViewModel.swift in Sources */,
