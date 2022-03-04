@@ -12,6 +12,9 @@
 		30303DDC27D22B6F002AFD89 /* LoadFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DDB27D22B6F002AFD89 /* LoadFromFile.swift */; };
 		30303DDE27D22B95002AFD89 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DDD27D22B95002AFD89 /* PreviewData.swift */; };
 		30303DE027D22DF1002AFD89 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DDF27D22DF1002AFD89 /* Color+Ext.swift */; };
+		30303DE327D257CB002AFD89 /* SectionQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 30303DE227D257CB002AFD89 /* SectionQuery.graphql */; };
+		30303DE527D258DB002AFD89 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DE427D258DB002AFD89 /* SectionModel.swift */; };
+		30303DE727D25A68002AFD89 /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30303DE627D25A68002AFD89 /* SectionViewModel.swift */; };
 		303E33E827CEF164006C113F /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 303E33E727CEF164006C113F /* Apollo */; };
 		30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */; };
 		30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30878A7F27CA9A6D006AE172 /* ContentView.swift */; };
@@ -36,6 +39,9 @@
 		30303DDB27D22B6F002AFD89 /* LoadFromFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadFromFile.swift; sourceTree = "<group>"; };
 		30303DDD27D22B95002AFD89 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		30303DDF27D22DF1002AFD89 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		30303DE227D257CB002AFD89 /* SectionQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = SectionQuery.graphql; sourceTree = "<group>"; };
+		30303DE427D258DB002AFD89 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		30303DE627D25A68002AFD89 /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
 		30878A7A27CA9A6D006AE172 /* SwiftUIConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConcurrencyApp.swift; sourceTree = "<group>"; };
 		30878A7F27CA9A6D006AE172 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,8 +77,18 @@
 			isa = PBXGroup;
 			children = (
 				30303DD727D222E7002AFD89 /* CourseModel.swift */,
+				30303DE427D258DB002AFD89 /* SectionModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		30303DE127D257A1002AFD89 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				30C0FB5C27D18F8A0098538E /* CourseQuery.graphql */,
+				30303DE227D257CB002AFD89 /* SectionQuery.graphql */,
+			);
+			path = Queries;
 			sourceTree = "<group>";
 		};
 		30878A7127CA9A6D006AE172 = {
@@ -100,12 +116,12 @@
 				30878A7D27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift */,
 				30303DD627D222C7002AFD89 /* Model */,
 				30878A9127CAA612006AE172 /* Views */,
+				30C0FB6627D192FD0098538E /* ViewModels */,
 				30878A9027CAA5F7006AE172 /* Components */,
 				30C0FB6327D1920F0098538E /* Utils */,
-				30C0FB6627D192FD0098538E /* ViewModels */,
 				30878A8127CA9A6F006AE172 /* Assets.xcassets */,
 				30878A8327CA9A6F006AE172 /* Preview Content */,
-				30C0FB5C27D18F8A0098538E /* CourseQuery.graphql */,
+				30303DE127D257A1002AFD89 /* Queries */,
 			);
 			path = SwiftUIConcurrency;
 			sourceTree = "<group>";
@@ -155,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				30C0FB6727D193110098538E /* CourseViewModel.swift */,
+				30303DE627D25A68002AFD89 /* SectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -228,6 +245,7 @@
 				30C0FB5B27D18D1A0098538E /* schema.json in Resources */,
 				30878A8227CA9A6F006AE172 /* Assets.xcassets in Resources */,
 				30303DDA27D22B60002AFD89 /* CourseData.json in Resources */,
+				30303DE327D257CB002AFD89 /* SectionQuery.graphql in Resources */,
 				30C0FB5D27D18F8A0098538E /* CourseQuery.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +281,12 @@
 				30C0FB6827D193110098538E /* CourseViewModel.swift in Sources */,
 				30C0FB6527D192330098538E /* Network.swift in Sources */,
 				30878A8027CA9A6D006AE172 /* ContentView.swift in Sources */,
+				30303DE527D258DB002AFD89 /* SectionModel.swift in Sources */,
 				30878A8F27CAA5E3006AE172 /* HomeView.swift in Sources */,
 				30303DDE27D22B95002AFD89 /* PreviewData.swift in Sources */,
 				30878A9527CAAAAC006AE172 /* FeaturedCourseList.swift in Sources */,
 				30878A7E27CA9A6D006AE172 /* SwiftUIConcurrencyApp.swift in Sources */,
+				30303DE727D25A68002AFD89 /* SectionViewModel.swift in Sources */,
 				30303DD827D222E7002AFD89 /* CourseModel.swift in Sources */,
 				30878A9727CAAF3B006AE172 /* CourseCard.swift in Sources */,
 				30878A9927CAB061006AE172 /* CouseList.swift in Sources */,
