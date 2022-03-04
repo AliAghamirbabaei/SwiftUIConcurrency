@@ -8,8 +8,15 @@
 import Foundation
 import Apollo
 
+enum FeaturedSubject: String, CaseIterable {
+    case SwiftUI = "SwiftUI"
+    case Design = "Design"
+}
+
 class CourseViewModel: ObservableObject {
     @Published public private(set) var courses: [Course] = []
+    var featuredSubject: FeaturedSubject = FeaturedSubject.allCases.randomElement() ?? .SwiftUI
+    @Published public private(set) var featuredCourses: [Course] = []
     
     private func queryCourses() async throws -> GraphQLResult<CourseQuery.Data>? {
         return await withCheckedContinuation { countinuation in
@@ -32,6 +39,7 @@ class CourseViewModel: ObservableObject {
             if let result = result {
                 if let courseCollection = result.data?.courseCollection {
                     self.courses = process(data: courseCollection)
+                    findFeaturedCourses()
                 }
             }
         } catch {
@@ -43,5 +51,13 @@ class CourseViewModel: ObservableObject {
         let content = CoursesCollection.init(data)
         
         return content.courses
+    }
+    
+    private func findFeaturedCourses() {
+        guard courses.count > 0 else {return}
+        
+        featuredCourses = courses.filter { course in
+            course.subject == featuredSubject.rawValue
+        }
     }
 }
