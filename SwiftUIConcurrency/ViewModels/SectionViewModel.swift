@@ -9,7 +9,7 @@ import Foundation
 import Apollo
 
 class SectionViewModel: ObservableObject {
-    @Published public private(set) var sections: [SectionDataColletion.SectionModel] = []
+    @Published public var sections: [SectionDataColletion.SectionModel] = []
     private func querySections() async throws -> GraphQLResult<SectionQuery.Data>? {
         return await withCheckedContinuation { countinuation in
             Network.shared.apollo.fetch(query: SectionQuery()) { result in
@@ -46,5 +46,9 @@ class SectionViewModel: ObservableObject {
     
     func randomizeSections() async {
         sections.shuffle()
+    }
+    
+    func orderSectionsByPinned() {
+        sections.sort {$0.isPinned && !$1.isPinned}
     }
 }
